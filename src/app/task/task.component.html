@@ -1,5 +1,5 @@
 @if (isAddingTask) {
-  <app-task-modal (cancel)="onCancel()" (submitTask)="onSubmitTask($event)"/>
+  <app-task-modal [userId]="userId" (close)="onClose()"/>
 }
 
 <section id="tasks">
